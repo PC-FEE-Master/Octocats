@@ -7,12 +7,19 @@ html {
 }
 .octodex {
   display:flex;
+  justify-content: center;
+  align-items: center; 
 }
+
+.octocat img {
+  border: 1px solid #E3E0DC;
+}
+
 .octocat > a img {
   width: 200px;
   height: 200px;
-  margin: auto;
-  
+  margin: 5px;
+  padding: 5px;
 } 
 
 li {
@@ -24,34 +31,41 @@ li {
   font-size: 9px;
 }
 
-.image-footer .image-number {
-  font-size: 9px;
-  color: #E3E0DC;
+.image-caption {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 140px;
+  border-bottom: 1px solid #E3E0DC;
+}
+
+.image-caption > a {
+  font-weight: 900;
+  border-bottom: 1px #E3E0DC;
 }
 
 .image-caption > span, a {
-    display: flex;
-    justify-content: right;
-    font-size: 9px;
-    color: #333;
-    text-decoration: none;
-    border-bottom: 1px #E3E0DC;
+  display: flex;
+  font-size: 9px;
+  color: #333;
+  text-decoration: none;
 }
 
-.image-caption {
+.authors li {
   display: flex;
-  width: 200px;
-  justify-content: right;
-  border-bottom: 1px solid #E3E0DC;
 }
 
 .authors img {
   display: flex;
   height: 15px;
   width: 15px;
-  justify-content: right;
 }
 
-.octocat img {
-  border: 1px solid #E3E0DC;
+.image-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-footer .image-number {
+  font-size: 9px;
+  color: #E3E0DC;
 }
