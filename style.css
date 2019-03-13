@@ -5,9 +5,9 @@ html {
 *, *::after, *::before {
   box-sizing: border-box;
 }
+
 .octodex {
   display:flex;
-  
 }
 
 .octocat img {
@@ -15,10 +15,9 @@ html {
 }
 
 .octocat > a img {
-  width: 300px;
-  height: 300px;
-  margin: 5px;
-  padding: 5px;
+  width: 290px;
+  height: 290px;
+  margin: 7px;
 } 
 
 li {
@@ -32,11 +31,11 @@ li {
 
 .image-caption {
   display: flex;
-  width: 100px;
+  justify-content: flex-end;
 }
 
 .image-caption > a {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .image-caption > span, a {
@@ -48,7 +47,7 @@ li {
 
 .authors li {
   display: flex;
-
+  padding-bottom: 5px;
 }
 
 .authors li img {
@@ -60,12 +59,14 @@ li {
 
 .image-footer {
   display: flex;
-  width: 300px;
-  justify-content: space-evenly;
+  width: 290px;
+  margin-left: 5px;
+  justify-content: space-between;
   border-bottom: 1px solid lightgrey;
 }
 
-.image-footer .image-number img {
+.image-number {
+  display: flex;
   font-size: 9px;
   color: lightgrey;
 }
