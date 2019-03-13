@@ -8,6 +8,7 @@ html {
 
 .octodex {
   display:flex;
+  flex-wrap: wrap;
 }
 
 .octocat img {
