@@ -7,17 +7,16 @@ html {
 }
 .octodex {
   display:flex;
-  justify-content: center;
-  align-items: center; 
+  
 }
 
 .octocat img {
-  border: 1px solid #E3E0DC;
+  border: 1px solid lightgrey;
 }
 
 .octocat > a img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   margin: 5px;
   padding: 5px;
 } 
@@ -33,39 +32,40 @@ li {
 
 .image-caption {
   display: flex;
-  flex-direction: row-reverse;
-  width: 140px;
-  border-bottom: 1px solid #E3E0DC;
+  width: 100px;
 }
 
 .image-caption > a {
   font-weight: 900;
-  border-bottom: 1px #E3E0DC;
 }
 
 .image-caption > span, a {
   display: flex;
-  font-size: 9px;
+  font-size: 11px;
   color: #333;
   text-decoration: none;
 }
 
 .authors li {
   display: flex;
+
 }
 
-.authors img {
+.authors li img {
   display: flex;
-  height: 15px;
-  width: 15px;
+  align-items: center;
+  height: 20px;
+  width: 20px;
 }
 
 .image-footer {
   display: flex;
-  justify-content: space-between;
+  width: 300px;
+  justify-content: space-evenly;
+  border-bottom: 1px solid lightgrey;
 }
 
-.image-footer .image-number {
+.image-footer .image-number img {
   font-size: 9px;
-  color: #E3E0DC;
+  color: lightgrey;
 }
